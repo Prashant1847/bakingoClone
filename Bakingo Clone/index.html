@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakingo Clone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="Javascript/main.js"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/a34038e15b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <!-- header displayed for mobile -->
+        <div class= "mobile-nav">
+            <div class="mobile-nav-upper flex">
+                <div class="nav-part-1-mob flex">
+                    <div class="hammburger-icon icon-size-and-bg"></div>
+                    <div class="logo logo-mob"></div>
+                </div>
+                <div class="nav-part-2-mob flex">
+                    <div class="search-icon icon-size-and-bg"></div>
+                    <div class="cart-icon icon-size-and-bg"></div>
+                    <i class="fa-solid fa-ellipsis-vertical threeDots-icon"></i>
+                </div>
+            </div>
+
+            <div class="location-and-help-container flex">
+                <div class="location-icon icon-size-and-bg"></div>
+                <div class="locations-container flex">Deliver To <div class="drop-down-icon icon-size-and-bg"></div>
+                </div>
+                <div class="help-container">Need Help</div>
+            </div>
+        </div>
+        <!-- header displayed  for desktop -->
+
+        <div class="pc-nav">
+            <div class="upper-nav-pc flex ">
+                <div class="logo logo-pc"></div>
+                <div class="city-container flex-center">
+                    <div class="location-icon icon-size-and-bg"></div>
+                    City
+                    <div class="drop-down-icon icon-size-and-bg"></div>
+                </div>
+
+                <div class="searchBar-div-pc ">
+                    <div class="searchBar-div-pc-lyr-1 flex-center">
+                        <div class="search-icon icon-size-and-bg"></div>
+                        <input type="text" class="searchBar" placeholder="Search for cakes, festival and more">
+                    </div>
+                </div>
+
+                <div class="nav-basic-feature flex">
+                    <a href="#">
+                        <div class="wallet-icon icon-size-and-bg"></div>
+                        <span>Wallet</span>
+                    </a>
+                    <a href="#">
+                        <div class="trackOrder-icon icon-size-and-bg"></div>
+                        <span>Track order</span>
+                    </a>
+                    <a href="#">
+                        <div class="user-icon icon-size-and-bg"></div>
+                        <span>Login/Signup </span>
+                    </a>
+                    <a href="#">
+                        <div class="cart-icon icon-size-and-bg"></div>
+                        <span>My cart</span>
+                    </a>
+                    <a href="#">
+                        <div class="hammburger-icon icon-size-and-bg"></div>
+                        <span>More</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-nav-pc">
+                <nav class="flex">
+                    <ul class="flex">
+                        <li>60 Minutes Delivery
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Cakes
+                            <i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Designer Cakes <i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Desserts <i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Birthday <i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Annivarsay<i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>By Cities <i class="fa-solid fa-angle-down down-icon"></i>
+                            <span class="separator">|</span>
+                        </li>
+                        <li>Occasions <i class="fa-solid fa-angle-down down-icon"></i>
+                        </li>
+                    </ul>
+
+                    <button class="support-btn">Support</button>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="slider-section">
+
+        <div class="slider-container">
+            <button class="control-btn left-btn"></button>
+            <div class="slider">
+                <ul class="slider-track">
+                    <li class="slidesList current-slide">
+                        <img src="images/banner images/third.jpg" alt="" class="banner">
+                    </li>
+                    <li class="slidesList next">
+                        <img src="images/banner images/second2.jpg" alt="" class="banner">
+                    </li>
+                    <li class="slidesList">
+                        <img src="images/banner images/first.jpg" alt="" class="banner">
+                    </li>
+                </ul>
+            </div>
+            <button class="control-btn right-btn"></button>
+        </div>
+        <div class="slide-indicator flex-center">
+            <div id="current-indicator">1/4</div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- catalogue of different flovors of cakes without slider -->
+    <section class="section-bg-cover section-margin-bottom-4rem">
+        <div class="section-heading">
+            Experience Flavours
+        </div>
+
+        <div class="default-catalogue ">
+            <div>
+                <img src="images/experienceCakesCatalogue/chocolate.jpg" alt="">
+                <div class="catalogue-heading">Chocolate</div>
+                <p class="catalogue-description ">For Choco Addicts</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/fruit_2.jpg" alt="">
+                <div class="catalogue-heading ">Fruits</div>
+                <p class="catalogue-description">A taste of tropics</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/red-velvet_2.jpg" alt="">
+                <div class="catalogue-heading ">Red Velvet</div>
+                <p class="catalogue-description">For exotic lovers</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/mango.jpg" alt="">
+                <div class="catalogue-heading ">Mango</div>
+                <p class="catalogue-description">For maongo lovers</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/black_forest_2.jpg" alt="">
+                <div class="catalogue-heading ">Block Forest</div>
+                <p class="catalogue-description">All time favorite</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/butterscotch_2.jpg" alt="">
+                <div class="catalogue-heading ">Butterscotch</div>
+                <p class="catalogue-description">Everygreen one</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/pineapple_2.jpg" alt="">
+                <div class="catalogue-heading">Pineapple</div>
+                <p class="catalogue-description">For candy fans</p>
+            </div>
+            <div>
+                <img src="images/experienceCakesCatalogue/kit_kat_2.jpg" alt="">
+                <div class="catalogue-heading">Kit kat</div>
+                <p class="catalogue-description">Crunchiness overloaded</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="popularCakes-section section-margin-bottom-4rem">
+        <div class="section-heading ">
+            Popular Cakes
+        </div>
+
+        <div class="catalogue-container">
+            <div class="catalogue-controls left-controls icon-size-and-bg ">
+            </div>
+            <div class="slider-catalogue" id="popularCakes-catalogue">
+                <div>
+                    <img src="images/popularCakesCatalogue/chocolateTruffle.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Chocolate Truffle</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/butterScotch.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Shape Butterscotch</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/pineapplde.jpg" alt="">
+                    <div class="slider-catalogue-heading">Pineapple cream cake</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/frutAndAlmond.jpg" alt="">
+                    <div class="slider-catalogue-heading">Assorted Fruits And Almonds</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/HalfChocolateAndVanilla.jpg" alt="">
+                    <div class="slider-catalogue-heading">Half chocolate and Half vanilla</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/PinkRoseVAnilla.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Pink rose vanilla</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/Fuse Chocolate.jpg" alt="">
+                    <div class="slider-catalogue-heading">Snicker Fuse Chocolate</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/popularCakesCatalogue/RedVelvelt.jpg" alt="">
+                    <div class="slider-catalogue-heading">Red Velevet heart cake</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+            </div>
+
+            <div class="catalogue-controls right-controls icon-size-and-bg">
+            </div>
+
+        </div>
+
+        <button class="viewMoreBtn">See More</button>
+
+    </section>
+
+
+    <section class="photoCakes-section section-margin-bottom-4rem">
+        <div class="section-heading">
+            Photo Cakes
+        </div>
+
+        <div class="catalogue-container">
+
+            <div class="catalogue-controls left-controls icon-size-and-bg ">
+            </div>
+            <div class="slider-catalogue" id="photoCakes-catalogue">
+                <div>
+                    <img src="images/photoCakesCatalogue/BirthdayBoy_chocolate.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Chocolate Truffle</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/birthdayPhotoCake.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Shape Butterscotch</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/BirthdayPhotoCake_baccha.jpg" alt="">
+                    <div class="slider-catalogue-heading">Pineapple cream cake</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/chotaBheem.jpg" alt="">
+                    <div class="slider-catalogue-heading">Assorted Fruits And Almonds</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/FrozenPosterCake.jpg" alt="">
+                    <div class="slider-catalogue-heading">Half chocolate and Half vanilla</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/monster.jpg" alt="">
+                    <div class="slider-catalogue-heading">Round Pink rose vanilla</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/round_shape_photoCakse.jpg" alt="">
+                    <div class="slider-catalogue-heading">Snicker Fuse Chocolate</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+                <div>
+                    <img src="images/photoCakesCatalogue/RoundRed_velvel.jpg" alt="">
+                    <div class="slider-catalogue-heading">Red Velevet heart cake</div>
+                    <p class="slider-catalogue-description">The heavely taste of this Choco Truffle will even leave the
+                        hardest-to-please </p>
+                </div>
+            </div>
+
+            <div class="catalogue-controls right-controls icon-size-and-bg">
+            </div>
+
+        </div>
+
+        <button class="viewMoreBtn">See More</button>
+
+    </section>
+
+    <section class="section-bg-cover section-margin-bottom-4rem">
+        <div class="section-heading">
+            Trending Cakes
+        </div>
+
+        <div class="only-img-and-heading-catalogue default-catalogue ">
+            <div>
+                <img src="images/trendingCakes/bombCakes.jpg" alt="">
+                <div class="catalogue-heading">Chocolatenot at all buddy what are yo </div>
+            </div>
+            <div>
+                <img src="images/trendingCakes/Photo Pulling Cake.jpg" alt="">
+                <div class="catalogue-heading ">Fruits</div>
+            </div>
+            <div>
+                <img src="images/trendingCakes/Pinata Cake.jpg" alt="">
+                <div class="catalogue-heading ">Red Velvet</div>
+            </div>
+            <div>
+                <img src="images/trendingCakes/Pull me up Cake_0.jpg" alt="">
+                <div class="catalogue-heading ">Mango</div>
+            </div>
+            <div>
+                <img src="images/trendingCakes/Surprise cake box.jpg" alt="">
+                <div class="catalogue-heading ">Block Forest</div>
+            </div>
+            <div>
+                <img src="images/trendingCakes/View_more.jpg" alt="">
+                <div class="catalogue-heading ">Butterscotch</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-margin-bottom-4rem">
+        <div class="section-heading">
+            Designer Cakes
+        </div>
+
+        <div class="only-img-and-heading-catalogue default-catalogue ">
+            <div>
+                <img src="images/designerCakes/alphabet_cakes_1.jpg" alt="">
+                <div class="catalogue-heading">Chocolatenot at all buddy what are yo </div>
+            </div>
+            <div>
+                <img src="images/designerCakes/baby_shower_2.jpg" alt="">
+                <div class="catalogue-heading ">Fruits</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/barbie_cake_4.jpg" alt="">
+                <div class="catalogue-heading ">Red Velvet</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/cartoon_cakes_1.jpg" alt="">
+                <div class="catalogue-heading ">Mango</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/number_cakes_2.jpg" alt="">
+                <div class="catalogue-heading ">Block Forest</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/rainbow_cakes_3.jpg" alt="">
+                <div class="catalogue-heading ">Butterscotch</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/superhero_cakes_3.jpg" alt="">
+                <div class="catalogue-heading ">Butterscotch</div>
+            </div>
+            <div>
+                <img src="images/designerCakes/View_more_0.jpg" alt="">
+                <div class="catalogue-heading ">Butterscotch</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="otherChoices-section">
+        <div class="section-heading">
+            Looking For Something else
+        </div>
+        <div class="otherChoices-container txt-center">
+            <div>
+                <img src="images/somethingElseCatalogue/pastries.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/somethingElseCatalogue/jar_cakes.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/somethingElseCatalogue/cup_cakes.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/somethingElseCatalogue/brownies.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/somethingElseCatalogue/vegan_cakes.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/somethingElseCatalogue/hampers.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="review-section">
+
+        <img src="images/desktopbanner.jpg" class="safety-measures-banner">
+
+        <div class="review-container flex">
+            <div class="customer-review-container flex-center">
+                <div class="customer-review-lyr-1">
+                    <div class="customer-review">
+                        Greeting size was mini.. Allover cake was 
+                        really yummy and flower bookey was also good
+                    </div>
+                    <div class="customer-name">
+                        Prashant
+                    </div>
+                    <div class="customer-review-indicator flex">
+                      <div></div> <div></div> <div></div> <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking-container flex-center">
+
+                <div class="ranking-container-lyr-1">
+                    <div class="section-heading review-contianer-heading">
+                        What out customers says about us!
+                    </div>
+
+                    <div class="ranking">
+                        <div class="ranking-in-stars-box">
+                            <i class="fa-solid fa-star start-icon"></i>
+                            <div class="ranking-in-number-container">
+                                4.49
+                            </div>
+                        </div>
+                        <div class="ranking-details">Based On 6637+ Reviews And Rating</div>
+                    </div>
+
+                    <div class="ranking flex">
+                        <div class="ranking-in-stars-box">
+                            <i class="fa-solid fa-star start-icon"></i>
+                            <div class="ranking-in-number-container">
+                                4.49
+                            </div>
+                        </div>
+                        <div class="ranking-details"><img src="images/reviewSection/google-image.webp" alt=""></div>
+                    </div>
+
+                    <div class="ranking flex">
+                        <div class="ranking-in-stars-box">
+                            <i class="fa-solid fa-star start-icon"></i>
+                            <div class="ranking-in-number-container">
+                                4.49
+                            </div>
+                        </div>
+                        <div class="ranking-details"><img src="images/reviewSection/facebook-logo.jpg" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutUs-section">
+        <div class="aboutUs-contianer">
+            <div class="aboutUs-heading">
+                About us
+            </div>
+            <div class="aboutUs-description">
+                We are exactly what you are looking for. Yes, 
+                we are an FSSAI certified online cake and Bakery
+                 Company that specializes in delivering absolutely
+                  lip-smacking delicacies. Currently, we are
+                   delivering cakes in Gurgaon, Delhi, Noida,
+                    Ghaziabad, Bangalore and Hyderabad. We are not just a bakery, we are not just bakers. In fact, we are just like you, a bunch of food lovers fascinated with sweet indulgence, who dreamt of creating an appetizing fairy land of divine 
+                delicacies that relishes the utmost desires.
+            </div>
+            <button class="viewMoreBtn">Read More</button>
+        </div>
+    </section>
+
+    <footer class="flex-center">
+        <div class="footer-lyr-1">
+            <div>
+                <div class="logo logo-pc"></div>
+            </div>
+            <div>
+                <ul>
+                    <li class="heading-footer">Know us</li>
+                    <li>Out Store</li>
+                    <li>Contact Us</li>
+                    <li>Locate Us</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="heading-footer">Need help</li>
+                    <li>FAQ</li>
+                    <li>Cancellation and Refund</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms and Conditions</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="heading-footer">More Info</li>
+                    <li>Corporate Cakes</li>
+                    <li>Coupons & offers</li>
+                    <li>Franchise</li>
+                    <li>Download App</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="heading-footer">Find Us</li>
+                    <li><div class="find-us-icons"></div></li>
+                    <li class="heading-footer">Subscribe out Newsletter</li>
+                </ul>
+                <input type="email" class="email-textBox" placeholder="Enter your email here">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+
+</html>

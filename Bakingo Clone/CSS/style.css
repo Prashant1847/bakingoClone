@@ -1,0 +1,912 @@
+/* google fonts  poppings, and pacifico*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-fonts : 'Pacifico',sans-serif;
+
+    --fnt-weight-primary : 500;
+    --fnt-weight-bold: 600;
+    --fnt-weight-bolder: 700;
+
+    --bdr-radius-primary: 5px;
+    --bdr-radius-bold: 10px;
+    --bdr-radius-bolder: 15px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* utility classes  */
+.flex{
+    display: flex;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("../images/Bakingo-logo.svg");
+}
+
+
+.logo-pc{
+    width: 7.5rem;
+    height: 3.1rem;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin-right: .5rem;
+}
+
+.section-margin-bottom-4rem{
+    margin-bottom: 4rem;
+}
+
+.section-heading{
+    font-family: var(--header-fonts);
+    font-size: clamp(1.6rem,3.2vw,4rem);
+    color: #251d34;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.catalogue-heading, .catalogue-description{
+    color: #251d34;
+}
+
+.catalogue-heading{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: var(--fnt-weight-primary);
+    margin:  0 .5rem;
+    white-space: nowrap;
+}
+
+.catalogue-description{
+    font-size: .6rem;
+    padding-bottom: .7rem;
+}
+
+
+.icon-size-and-bg{
+    background-image: url("../images/variousIcons.svg");
+    width: 32px;    
+    height: 32px;
+}
+
+.default-catalogue{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    text-align: center;
+    min-width: max-content;
+    width: 70%;
+ }
+
+/* header nav for mobile */
+
+/* --> layout <-- */
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav-upper{
+    padding: .5rem;
+}
+
+.nav-part-1-mob, .nav-part-2-mob{
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.nav-part-2-mob{
+    padding-right: 1.1em;
+    column-gap: .7rem;
+}
+
+.location-and-help-container{
+    padding: .7rem 1.2rem;
+    padding-right: 1rem;
+    border-top: solid .1px #80808069;
+}
+
+.locations-container{
+    line-height: 2;
+    padding-left: 1em;
+    font-size: .85rem;
+    font-weight: var(--fnt-weight-primary);
+    min-width: max-content;
+}
+
+.help-container{
+    margin-left: auto;
+    border: solid red 1.5px;
+    padding: 0.1rem 0.8rem;
+    border-radius: var(--bdr-radius-bolder);
+    list-style: 1.5;
+    max-height: 1.8rem;
+    font-size: .85rem;
+    min-width: max-content
+}
+
+
+/* --> Components  <-- */
+
+.hammburger-icon{
+    background-position: -416px -43px;
+}
+
+.logo-mob{
+    width: 64px;
+    height: 28px;
+    background-size: 4rem;
+}
+
+.search-icon{
+    margin-left: auto;
+    background-position: 54% -40px;
+}
+
+.cart-icon{
+    background-position: 21.5% -40px;
+}
+
+.threeDots-icon{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: rgb(104, 101, 101);
+}
+
+
+.drop-down-icon{
+    background-position: 29.5% -43px;
+}
+
+.location-icon{
+    background-position: 11% -45px;
+}
+
+/* header for desktop version */
+
+ /* Upper nav bar  */
+/* --> layout <-- */
+.upper-nav-pc {
+    padding: 1.12em 1.75em;
+    font-weight: var(--fnt-weight-primary);
+    font-size: .69rem;
+}
+
+.searchBar-div-pc{
+    width: 50%;
+}
+
+.searchBar-div-pc-lyr-1{
+    background-color: hsla(0,0%,94.9%,.57);
+    width: 63%;
+    padding: 0 0.7em;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+.nav-basic-feature{
+    flex-grow: 1;
+    padding-right: 1em;
+}
+
+.nav-basic-feature div{
+    margin: auto;
+}
+
+/* --> Componenets <-- */
+
+.searchBar{
+    width: 100%;
+    margin-left: 0.45rem;
+    height: 48%;
+    background-color: #f7f7f7;
+    border: 0;
+}
+
+.searchBar:focus{
+    outline: none;
+    border: solid 1px #80808030;
+}
+
+::placeholder{
+    color: #292640;
+    opacity: .5;
+}
+
+
+.wallet-icon{
+    background-position: 16% -40px;
+}
+
+.trackOrder-icon{
+    background-position: 18.7% -40px;
+}
+
+.user-icon{
+    background-position: 24.2% -40px;
+}
+
+.nav-basic-feature a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-basic-feature a+a{
+    margin-left: 1.99rem;
+}
+
+
+/* buttom nav */
+
+/* --> layout <-- */
+.bottom-nav-pc{
+    border: 1px solid rgb(242, 242, 242);
+    padding: 0.55rem;
+}
+
+nav, nav ul, nav li{
+    min-width: max-content;
+}
+
+nav{
+    padding-right: .7em;
+}
+
+nav ul{
+    width: 79%;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+nav li{
+    font-size: .800rem;
+    list-style: none;
+    padding: 0 .45rem;
+    cursor: pointer;
+}
+
+
+/* --> componenets <-- */
+.down-icon{
+    font-size: .6rem;
+}
+
+.separator{
+    font-size: 0.8rem;
+    color: #292929;
+    padding: .43rem;
+}
+
+.support-btn{
+    border-radius: var(--bdr-radius-bolder);
+    border: 1px solid red;
+    font-size: .6em;
+    width: 3.7rem;
+    height: 1.5rem;
+    background-color: white;
+    cursor: pointer;
+    color: #007bff;
+    margin-left: auto;
+}
+
+/* //slider section styles  */
+
+/* --> layout <-- */
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    height: 26vw;
+    min-height: 230px;
+    overflow: hidden;
+}
+
+.slider-track,
+.slidesList {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1s ease;
+}
+
+.slidesList {
+    list-style: none;
+    position: absolute;
+    inset: 0;
+    transition: transform 2s ease;
+    transform-origin: left;
+}
+
+.banner {
+    height: 100%;
+    object-fit: cover;
+    outline: solid 1px black;
+    width: 100%;
+}
+
+.slide-indicator {
+    height: 2.5rem;
+}
+
+.slide-indicator div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.slide-indicator div+div {
+    margin-left: .6rem;
+}
+
+/* componenets */
+
+.control-btn {
+    background-color: rgba(0, 0, 0, 0.349);
+    border: none;
+    padding: .5em;
+    opacity: .3;
+    width: 2rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: opacity .4s ease;
+}
+
+.control-btn:focus {
+    opacity: 1;
+}
+
+.left-btn{
+    left: 0;
+    z-index: 1;
+}
+
+.right-btn{
+    right: 0;
+}
+
+.left-btn::after,
+.right-btn::before {
+    position: absolute;
+    content: "";
+    right: 35%;
+    border-right: 12px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.right-btn::before {
+    border-left: 12px solid white;
+    left: 35%;
+    border-right: none;
+}
+
+
+#current-indicator {
+    width: 35px;
+    height: 20px;
+    color: red;
+    line-height: 1.5;
+    opacity: 1;
+    background: #f84a2170;
+    text-align: center;
+    font-size: .77rem;
+    border-radius: var(--bdr-radius-bolder);
+}
+
+/* common styles in all catalogues */
+
+.section-bg-cover{
+    background-image: url("../images/cakesBg.jpg");
+    background-size: cover;
+}
+
+.default-catalogue > div{
+    border-radius: var(--bdr-radius-primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    text-align: center;
+    padding: .8rem;
+    background-color: white; /* usefull when bg is under the cards */
+    width: clamp(9rem, 17vw ,14rem);
+}
+
+.default-catalogue  img{
+    width: 100%;
+}
+
+.default-catalogue > div:hover{
+    box-shadow: inset 0px 0px 0px 5px  pink;
+}
+
+/* styels common in all slider catalogue */
+
+/* --> layout <-- */
+.catalogue-container{
+    width: 82%;
+    margin: auto;
+    padding: .2rem;
+    overflow: hidden;
+}
+
+.slider-catalogue{
+    display: flex;
+    transform-origin: left;
+    gap: 1em;
+    transition: transform .6s ease;
+    --position : 0;
+    transform: translateX(var(--position));
+}
+
+.slider-catalogue > div{ /*div is all the cards in catalogue*/
+    padding: .65rem;
+    min-width: clamp(11.5rem, 22vw, 17rem);
+    border-radius: var(--bdr-radius-bolder);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.slider-catalogue img{
+    width: 100%;
+    border-radius: var(--bdr-radius-bolder)
+}
+
+.slider-catalogue-heading{
+    color:#292640;
+    font-weight: var(--fnt-weight-primary);
+    font-size: 19px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.slider-catalogue-description{
+    font-size: .7rem;
+    margin-top: .55rem;
+    color: #24272c;
+}
+
+/* --> componenets <-- */
+
+.catalogue-controls{
+    width: 54px;
+    height: 105px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    z-index: 1;
+}
+
+.left-controls, .right-controls{
+    top: 47%;
+}
+
+.left-controls{
+    left: 2.2rem;
+    background-position: -12px -21px;
+    display: none;
+}
+
+.right-controls{
+    right: 2.2rem;
+    background-position: -73px -21px;
+}
+
+.viewMoreBtn{
+    padding: .5rem 1.35rem;
+    background-color: #ff7f7d1a;
+    color: #ff7f7d;
+    font-size: .85rem;
+    font-weight: var(--fnt-weight-bold);
+    display: block;
+    border: solid 1.82px #ff7f7db4;
+    border-radius: var(--bdr-radius-primary);
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* end */
+
+/* styles for popular cakes and photo  section */
+
+.popularCakes-section, .photoCakes-section{
+    position: relative;
+}
+
+/* trending and designer cakes catalogues */
+
+.only-img-and-heading-catalogue > div{
+    height: clamp(10.5rem, 17vw ,14rem);
+}
+
+.only-img-and-heading-catalogue  img{
+    width: 90%;
+}
+
+
+/* looking for something else section  */
+.otherChoices-section{
+    background-image: url("../images/somethingElseCatalogue/otherChoiceBg.jpg");
+    background-size: cover;
+    width: 85%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.otherChoices-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    width: 80%;
+    min-width: max-content;
+}
+
+.otherChoices-container img{
+    width: 16rem;
+}
+
+/* review seciton and banner img  */
+
+/* --> layout <-- */
+.safety-measures-banner{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.review-section{
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.review-container{
+    margin-top: 3rem;
+}
+
+.customer-review-container, .ranking-container{
+    width: 50%;
+    height: clamp(380px, 60vw, 600px)
+}
+
+.customer-review-container{
+    background-image: url("../images/reviewSection/blobs_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.customer-review-lyr-1{
+    width: Max(55%, 160px);
+    color: white;
+}
+
+.customer-review-lyr-1 > div{
+    margin-bottom: 1.5em;
+}
+
+.customer-name{
+    font-weight: var(--fnt-weight-bold);
+    letter-spacing: .6px;
+}
+
+.customer-review-indicator{
+    align-items: center;/* keeping the active indicator in line with inactive indicator*/
+}
+
+.customer-review-indicator > div{
+    width: .15rem;
+    aspect-ratio: 1;
+    background-color: white;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+#active-review-indicator{
+    width: .4rem;
+}
+
+.ranking-container-lyr-1{
+    width: Min(60%, 300px);
+}
+
+.ranking-container-heading{
+    font-size: 2rem;
+    font-family: var(--header-fonts)
+}
+
+.ranking{
+    margin-bottom: 1.5em;
+}
+
+.ranking-details{
+    padding-left: .3em;
+}
+
+.ranking-details img{
+    width: 7em;
+    height: 2.5em;
+}
+
+/* --> componenets <-- */
+.ranking-in-stars-box{
+    background-color: #4e832d;
+    display: inline-block;
+    height: 1.7em;
+    width: 4.8em;
+    color: white;
+    padding: 0 .5em;
+    border-radius: var(--bdr-radius-primary)
+}
+
+.ranking-in-number-container{
+    font-size: .80em;
+    font-weight: var(--fnt-weight-bold);
+    display: inline;
+}
+
+
+ /* about us section  */
+
+ /* --> layout <-- */
+.aboutUs-section{
+    margin-top: 4rem;
+    box-sizing: content-box;
+    background-image: url("../images/aboutUsBg.png");
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 3% 0;
+}
+
+.aboutUs-contianer{
+    width: 40%;
+    margin-left: 8%;
+}
+
+.aboutUs-contianer button{
+    margin: 3%;
+}
+
+.aboutUs-heading{
+    font-family: var(--header-fonts);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aboutUs-description{
+    color: #251d349e;
+}
+
+/* footer styling */
+
+footer{
+    margin-top: 4%;
+    padding: 0 3rem;
+    padding-top: 17%;
+    padding-bottom: 3rem;
+    background-image: url("https://media.bakingo.com/ssr-static/footer.png");
+    background-position-y: -36px;
+    background-size: cover;
+}
+
+.footer-lyr-1{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    width: 95%;
+}
+
+.footer-lyr-1 > div{
+    flex-grow: 1;
+}
+
+.footer-lyr-1 ul{
+    list-style: none;
+    font-size: .7rem;
+}
+
+.footer-lyr-1 li{
+    margin-bottom: .3rem;
+    color: #5e5e5e;
+}
+
+.footer-lyr-1 .heading-footer{ /* this is heading */
+    margin-bottom: .5rem;
+    font-weight: var(--fnt-weight-primary);
+    font-size: 1rem;
+    color: #292640;
+    opacity: 0.8;
+}
+
+/* conpoments */
+
+.find-us-icons{
+    background-image: url("https://media.bakingo.com/images/common/sprite_bk.svg");
+    width: 9rem;
+    height: 1rem;
+    background-position: -870px -43px;
+    margin: 15px 0;
+}
+
+.email-textBox{
+    padding: .6em .5em;
+}
+
+.subscribe-btn{
+    padding: .78em 0;
+    border-radius: var(--bdr-radius-primary);
+    margin-top: 1.025rem;
+    width: 88%;
+    font-weight: var(--fnt-weight-bolder);
+    background-color: #f35c5c;
+    color: white;
+    border:1px solid #f35c5c;
+    display: block;
+}
+
+/* making it reponsive code */
+
+@media  screen and (max-width: 1000px) {
+    .mobile-nav{
+        display: block;
+    }
+
+    .pc-nav{
+        display: none;
+    }
+
+    .default-catalogue{
+        grid-template-columns: repeat(3, 1fr);
+        width: 85%;
+    }
+
+
+    .footer-lyr-1{
+        column-gap: 5%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .catalogue-container{
+        overflow: scroll;
+    }
+
+    .otherChoices-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .default-catalogue{
+        grid-template-columns: repeat(2,  1fr);
+        width: 70%;
+    }
+
+    .aboutUs-contianer{
+        width: 70%;
+        margin: auto;
+    }
+    
+    footer{
+        background-position-y: 0;
+    }
+
+    .footer-lyr-1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-lyr-1 > div{
+        margin-top: .5rem;
+    }
+
+}
+
+
+@media  screen and (max-width : 550px){
+
+    .otherChoices-section{
+        width: 95%;
+        padding: 1.8rem;
+    }
+
+    .otherChoices-container img{
+        width: 13rem;
+        border-radius: var(--bdr-radius-primary);
+    }
+
+    .otherChoices-container{
+        grid-template-columns: 1fr;
+        row-gap: .7rem;
+    }
+
+    .aboutUs-section{
+        margin: 0;
+    }
+
+    .footer-lyr-1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-lyr-1 > div{
+        margin-top: 1.5rem;
+    }
+
+    .review-container{
+        position: relative;
+        display: block;
+        padding: 1px;  /* this is done to avoid marign collapse */
+    }
+
+    .customer-review-container, .ranking-container{
+        width: 100%;
+        min-width: 290px;
+    }
+
+    .ranking-container{
+        height: 300px;
+    }
+
+    .customer-review-container{
+        margin-top: Max(4rem, 12%);
+    }
+
+    .review-contianer-heading{
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+   
+     .footer-lyr-1{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .find-us-icons, .subscribe-btn, .logo-pc{
+        margin: auto;
+    }
+
+    .subscribe-btn{
+        margin-top: 1.025rem;
+    }
+}
+
